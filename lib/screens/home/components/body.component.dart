@@ -32,10 +32,11 @@ class Body extends StatelessWidget {
               child: GridView.builder(
                 itemCount: products.length,
                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 2,
-                    childAspectRatio: 0.75,
-                    mainAxisSpacing: kDefaultPadding,
-                    crossAxisSpacing: kDefaultPadding),
+                  crossAxisCount: 2,
+                  childAspectRatio: 0.75,
+                  mainAxisSpacing: kDefaultPadding,
+                  crossAxisSpacing: kDefaultPadding,
+                ),
                 itemBuilder: (context, index) => ItemCard(
                   product: products[index],
                   press: () => Navigator.push(
